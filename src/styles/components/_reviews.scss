@@ -1,0 +1,33 @@
+.reviews {
+    margin-bottom: 100px;
+
+    &__title-box {
+		display: flex;
+		justify-content: center;
+        width: 100%;
+	}
+
+    &__title {
+		margin-bottom: 30px;
+	}
+
+    &__list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		align-items: center;
+		grid-gap: 10px;
+		margin-bottom: 60px;
+
+		@media (max-width: 768px) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media (max-width: 560px) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+    &__item img {
+        width: 100%;
+    }
+}

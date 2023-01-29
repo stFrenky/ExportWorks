@@ -1,0 +1,44 @@
+.about {
+    margin-bottom: 100px;
+
+    &__title-box {
+		display: flex;
+		justify-content: center;
+        width: 100%;
+	}
+
+    &__title {
+		margin-bottom: 30px;
+	}
+
+    &__text, &__chapter {
+        font-size: 20px;
+        line-height: 1.55;
+        font-family: 'CirceLight',Arial,sans-serif;
+        font-weight: 300;
+        color: #000000;
+    }
+
+    &__chapter {
+        font-weight: 700;
+        margin: 40px 0;
+    }
+
+    &__list {
+        padding: 15px 0 30px 10px;
+    }
+
+    &__point {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__symbol {
+        width: 9px;
+        height: 9px;
+        background-color: black;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+}
