@@ -1,0 +1,144 @@
+.header-wrapper {
+	background: url('../src/assets/images/banner_bg.jpg') top center no-repeat;
+	width: 100%;
+	background-size: cover;
+	margin-bottom: 120px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+	margin-bottom: 18px;
+
+	@media (max-width: 768px) {
+		display: block;
+	}
+
+	&__logo-box,
+	&__info {
+		display: flex;
+	}
+
+	&__logo-box {
+		align-items: center;
+	}
+
+	&__logo {
+		margin-right: 20px;
+		cursor: pointer;
+
+		img {
+			width: 87px;
+			height: 87px;
+		}
+	}
+
+	&__discription {
+		padding: 10px;
+		max-width: 320px;
+		font-size: 16px;
+
+	}
+
+	&__info {
+		padding-top: 15px;
+		font-size: 18px;
+
+	}
+
+	&__contacts {
+		margin-right: 90px;
+
+		&>a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		@media (max-width: 1024px) {
+			margin-right: 0;
+		}
+	}
+
+	&__work-schedule {
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 12px;
+			height: 12px;
+			background: #1ab056;
+			border-radius: 50%;
+			top: 3px;
+			left: -18px;
+		}
+
+		@media (max-width: 1024px) {
+			display: none;
+		}
+	}
+
+	&__menu-hamburger {
+		margin-left: auto;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		width: 100px;
+		height: 40px;
+		background: radial-gradient(rgba(255, 106, 107, 1) 0%, rgba(201, 60, 62, 1) 97%);
+		color: #fff;
+		border-radius: 30px;
+		cursor: pointer;
+		margin: 0 auto;
+		font-size: 20px;
+		font-weight: 600;
+
+		@media (max-width: 768px) {
+			display: flex;
+		}
+	}
+
+	&__menu-hamburger-page {
+		position: relative;
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 200px;
+		height: 100vh;
+		padding: 48px 40px 38px;
+		background: radial-gradient(rgb(255, 106, 107) 0%, rgb(201, 60, 62) 97%);
+		color: #fff;
+		font-size: 24px;
+
+		a:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__menu-hamburger-page.active {
+		display: flex;
+	}
+
+	&__menu-hamburger-close {
+		cursor: pointer;
+
+		span {
+			position: absolute;
+			top: 25px;
+			right: 15px;
+			display: block;
+			width: 25px;
+			height: 2px;
+			background: #fff;
+			z-index: 111;
+			transform: rotate(45deg);
+
+			&:nth-child(2) {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}

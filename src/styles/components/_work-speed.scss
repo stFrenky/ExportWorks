@@ -1,0 +1,82 @@
+.work-speed {
+	margin-bottom: 100px;
+
+	&__title-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+	}
+
+	&__subtitle {
+		font-size: 25px;
+	}
+
+	&__content {
+		background: url('../src/assets/images/work-speed_bg.jpg') 400px -250px no-repeat;
+		height: 650px;
+
+		@media (max-width: 768px) {
+			background-position: 0 -250px;
+		}
+	}
+
+	&__info-box {
+		position: relative;
+		max-width: 350px;
+		height: 130px;
+		padding: 50px 0 0 50px;
+		border: 1px solid #c4c4c4;
+		border-radius: 10px;
+		background: url('../src/assets/images/work-speed_gaz.jpg') no-repeat right #fff;
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 120px;
+			height: 150px;
+			background: url('../src/assets/images/work-speed_watch.jpg') no-repeat;
+			top: -105px;
+			left: -55px;
+		}
+
+		@media (max-width: 768px) {
+			margin: 0 auto;
+		}
+	}
+
+	&__info {
+		width: 220px;
+		font-size: 20px;
+
+	}
+
+	&__btn {
+		position: relative;
+		margin: 256px auto 0 auto;
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 210px;
+			height: 150px;
+			background: url('../src/assets/images/work-speed_ms.png') no-repeat;
+			top: 38px;
+			left: -224px;
+
+			@media (max-width: 910px) {
+				top: 110px;
+				left: 90px;
+			}
+
+			@media (max-width: 425px) {
+				top: 110px;
+				left: 40px;
+			}
+		}
+	}
+}

@@ -1,0 +1,70 @@
+.work-time {
+	background: url('/src/assets/images/work-time_bg.jpg') -180px 320px no-repeat;
+	margin-bottom: 100px;
+	height: 1100px;
+
+	@media (min-width: 1921px) {
+		background-position: center 320px;
+	}
+
+	@media (max-width: 1200px) {
+		background-position: 60% 320px;
+	}
+
+	@media (max-width: 768px) {
+		background-position: 70% 130%;
+		height: 1600px;
+	}
+
+
+
+
+	&__title-box {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0 40px;
+
+		@media (max-width: 768px) {
+			display: block;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media (max-width: 768px) {
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	&__btn-box {
+		display: flex;
+		justify-content: center;
+		margin-top: 200px;
+	}
+
+	&__text {
+		font-size: 20px;
+		font-weight: 400;
+		margin-bottom: 20px;
+		max-width: 230px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	&__time {
+		font-size: 20px;
+		color: #c75a5a;
+	}
+}
