@@ -1,8 +1,12 @@
 .header-wrapper {
 	background: url('../src/assets/images/banner_bg.jpg') top center no-repeat;
 	width: 100%;
-	background-size: cover;
 	margin-bottom: 120px;
+	background-size: cover;
+
+	@media (min-width: 1920px) {
+		background-size: contain;
+	}
 }
 
 .header {
@@ -48,6 +52,7 @@
 
 	&__contacts {
 		margin-right: 90px;
+		font-size: 18px;
 
 		&>a {
 			text-decoration: none;

@@ -1,0 +1,39 @@
+.feedback {
+
+	display: flex;
+	justify-content: center;
+
+	&__form {
+		max-width: 380px;
+		padding: 60px 60px 42px;
+		background: #faea97;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__title {
+		margin-bottom: 24px;
+	}
+
+	&__name,
+	&__adress,
+	&__number {
+		padding: 20px 10px;
+		width: 300px;
+		border-radius: 30px;
+		border: none;
+	}
+
+	&__number {
+		margin: 20px 0;
+	}
+
+	&__btn {
+		margin-top: 20px;
+	}
+
+	&__privacy-policy {
+		margin-top: 24px;
+	}
+}
