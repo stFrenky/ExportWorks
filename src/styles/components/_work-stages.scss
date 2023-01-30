@@ -27,13 +27,27 @@
 		position: relative;
 		background: #faea97;
 		border-radius: 10px;
-		padding: 60px 50px 60px 70px;
+		padding: 60px 50px 60px 65px;
 		max-width: 300px;
 		height: 610px;
 		margin-right: 75px;
 
 		@media (max-width: 920px) {
 			margin-right: 0px;
+		}
+
+		@media (max-width: 425px) {
+			margin-right: 0px;
+
+			padding: 60px 45px 60px;
+			max-width: 280px;
+		}
+
+		@media (max-width: 375px) {
+			margin-right: 0px;
+
+			padding: 60px 25px 60px;
+			max-width: 260px;
 		}
 	}
 
@@ -73,7 +87,6 @@
 
 	&__masters-note {
 		bottom: -20px;
-		left: 45px;
 		background: #fff;
 		padding: 30px 50px;
 		font-size: 18px;
@@ -81,7 +94,13 @@
 		line-height: 1.6;
 		width: 235px;
 		border-radius: 10px;
-		margin-left: -25px;
+		margin-left: -27px;
+
+		@media (max-width: 375px) {
+			width: 210px;
+			margin-left: -25px;
+
+		}
 	}
 
 	&__process {

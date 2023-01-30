@@ -1,0 +1,136 @@
+.quality-assurance {
+	padding: 75px 0 45px;
+
+	&__list {
+		display: grid;
+		grid-template-columns: 365px 365px;
+		gap: 100px;
+		justify-content: center;
+
+		@media (max-width: 1200px) {
+			grid-template-columns: 365px;
+			gap: 50px;
+		}
+
+		@media (max-width: 375px) {
+			grid-template-columns: 310px;
+		}
+
+		@media (max-width: 350px) {
+			grid-template-columns: 280px;
+		}
+	}
+
+	&__item {
+		max-width: 365px;
+
+
+
+		@media (max-width: 1200px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__note-neighbour {
+		position: relative;
+		padding: 30px 20px 30px 160px;
+		background: #faea97;
+		line-height: 1.6;
+		font-weight: 600;
+		border-radius: 10px;
+
+		&::after {
+			position: absolute;
+			content: '';
+			background: url('../src/assets/images/quality-assurance_neighbour.png') no-repeat;
+			width: 130px;
+			height: 128px;
+			left: 0;
+			bottom: 0;
+
+			@media (max-width: 375px) {
+				background: none;
+			}
+		}
+
+		@media (max-width: 375px) {
+			padding: 30px 20px;
+		}
+	}
+
+	&__note-oven {
+		margin-top: -95px;
+		width: 230px;
+		position: relative;
+		padding: 60px 40px 45px 260px;
+		background: #fdc47a;
+		line-height: 1.6;
+		font-weight: 600;
+		border-radius: 10px;
+
+		&::after {
+			position: absolute;
+			content: '';
+			background: url('../src/assets/images/quality-assurance_oven.png') no-repeat;
+			width: 185px;
+			height: 270px;
+			left: 30px;
+			bottom: 0;
+
+			@media (max-width: 1200px) {
+				padding: 60px 30px 280px;
+				bottom: -338px;
+			}
+		}
+
+		@media (max-width: 1200px) {
+			padding: 60px 30px 280px;
+			font-weight: 400;
+			margin: 0 auto;
+			width: 240px;
+		}
+
+		@media (max-width: 350px) {
+			width: 220px;
+		}
+	}
+
+	&__title-box {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 15px;
+
+	}
+
+	&__img {
+		margin-bottom: 20px;
+		max-width: 220px;
+		height: 170px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+
+	&__item-title {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1.5;
+		margin-bottom: 25px;
+	}
+
+	&__text-box {
+		display: flex;
+		flex-direction: column;
+		gap: 25px 0;
+		line-height: 1.6;
+	}
+
+}
