@@ -3,6 +3,10 @@
 	background: url('../src/assets/images/work-stages_bg.png') no-repeat bottom #F3F3F3;
 	padding: 55px 0 140px;
 
+	@media (max-width: 425px) {
+		padding: 40px 0 70px;
+	}
+
 	&__titile-box {
 		display: flex;
 		justify-content: center;
@@ -11,6 +15,12 @@
 
 	&__info {
 		display: flex;
+		justify-content: center;
+
+		@media (max-width: 920px) {
+			flex-direction: column-reverse;
+			align-items: center;
+		}
 	}
 
 	&__masters {
@@ -19,9 +29,12 @@
 		border-radius: 10px;
 		padding: 60px 50px 60px 70px;
 		max-width: 300px;
-		min-height: 640px;
+		height: 610px;
 		margin-right: 75px;
 
+		@media (max-width: 920px) {
+			margin-right: 0px;
+		}
 	}
 
 	&__masters-title {
@@ -59,7 +72,6 @@
 	}
 
 	&__masters-note {
-		position: absolute;
 		bottom: -20px;
 		left: 45px;
 		background: #fff;
@@ -67,31 +79,65 @@
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 1.6;
-		max-width: 235px;
+		width: 235px;
 		border-radius: 10px;
+		margin-left: -25px;
+	}
+
+	&__process {
+		display: flex;
+		flex-direction: column;
+		gap: 40px 0;
+
+		@media (max-width: 920px) {
+			margin-bottom: 95px;
+		}
 	}
 
 	&__process-stage {
 		display: flex;
 		align-items: center;
+		position: relative;
+
+		&:not(:last-child)::after {
+			content: '';
+			position: absolute;
+			width: 40px;
+			height: 50px;
+			background: url('../src/assets/images/work-stages-arrow.svg') no-repeat center;
+			bottom: -55px;
+			left: 15px;
+
+			@media (max-width: 425px) {
+				background: none
+			}
+		}
+
+		@media (max-width: 425px) {
+			flex-direction: column;
+		}
 	}
 
 	&__process-img {
+		padding: 10px 0 0 0;
 		margin-right: 30px;
 		width: 70px;
-		height: 100px;
+		height: 75px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		object-fit: cover;
 
+		@media (max-width: 425px) {
+			margin: 0 0 20px 0;
+		}
 	}
 
 	&__process-text {
 		max-width: 250px;
-	}
 
-	&__arrow {
-		padding: 5px 0 5px 30px;
+		@media (max-width: 425px) {
+			text-align: center;
+		}
 	}
 }
