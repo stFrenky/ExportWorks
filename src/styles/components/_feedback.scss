@@ -5,6 +5,10 @@
 	justify-content: center;
 	padding-bottom: 150px;
 
+	.container {
+		padding: 0;
+	}
+
 	&__form {
 		max-width: 380px;
 		padding: 60px 60px 42px;
@@ -22,12 +26,19 @@
 			height: 420px;
 			bottom: -95px;
 			right: -175px;
-			background: url('../src/assets/images/mobaile.png');
+			background: url('../src/assets/images/feedback_mobaile.png');
 
 			@media (max-width: 500px) {
 				background: none;
+				width: 0;
+				height: 0;
 			}
 		}
+
+		@media (max-width: 460px) {
+			padding: 60px 15px 42px;
+		}
+
 	}
 
 	&__title {
