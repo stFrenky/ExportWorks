@@ -1,1 +1,153 @@
-.specialists {}
+.specialists {
+
+	padding: 75px 0 20px 0;
+
+	&__title-box {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 40px;
+
+	}
+
+	&__title {
+		margin-bottom: 20px;
+		max-width: 600px;
+	}
+
+	&__subtitle,
+	&__text {
+		font-size: 20px;
+	}
+
+	&__subtitle {
+		text-align: center;
+		font-weight: 600;
+	}
+
+	&__content {
+		display: flex;
+		margin-bottom: 20px;
+		justify-content: center;
+
+		@media (max-width: 900px) {
+			flex-direction: column-reverse;
+			align-items: center;
+		}
+	}
+
+	&__text {
+		margin-bottom: 10px;
+		max-width: 435px;
+
+		@media (max-width: 900px) {
+			margin: 0 auto 50px auto;
+			max-width: 600px;
+
+		}
+	}
+
+
+
+	&__list-items {
+		display: flex;
+		flex-direction: column;
+		gap: 10px 0;
+
+		@media (max-width: 900px) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px 50px;
+
+		}
+	}
+
+	&__img {
+		margin-bottom: 30px;
+
+		img {
+			max-width: 100%;
+		}
+
+	}
+
+	&__anoth-items {
+		display: flex;
+		gap: 0 20px;
+		justify-content: center;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__anoth-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		width: 330px;
+
+		.specialists__item-img {
+			margin-bottom: 10px;
+		}
+
+		.specialists__item-text {
+			padding: 0 0 0 20px;
+
+			@media (max-width: 450px) {
+				padding: 0;
+			}
+		}
+
+		@media (max-width: 375px) {
+			flex-direction: column;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		padding: 0 50px 0 0;
+
+		@media (max-width: 900px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+		}
+	}
+
+	&__item-text {
+		margin-right: 20px;
+
+		@media (max-width: 900px) {
+			margin: 0;
+		}
+
+		@media (max-width: 450px) {
+			width: 315px;
+			text-align: center;
+		}
+	}
+
+	&__item-img {
+		width: 100px;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__btn-box {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__btn {
+		@media (max-width: 450px) {
+			width: 220px;
+		}
+	}
+
+}
