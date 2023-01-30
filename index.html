@@ -193,12 +193,13 @@
 					<div class="feedback__title title">Получите за 10 минут точную стоимость вывоза мусора
 						по вашей фотографии</div>
 					<input class="feedback__name" placeholder="Ваше имя" type="text">
-					<input class="feedback__number" placeholder="+7(999) 999-99-99" type="text">
+					<input class="feedback__number" placeholder="+7(999) 999-99-99" type="number">
 					<input class="feedback__adress" placeholder="Адрес, откуда забрать" type="text">
-					<button class="feedback__btn btn"></button>
-					<div class="feedback__privacy-policy">
-						<span></span>
+					<button class="feedback__btn btn">Узнать стоимость</button>
+					<div class="feedback__privacy-policy">Отправляя заявку, вы соглашаетесь с
+						<span>политикой конфиденциальности</span>
 					</div>
+					<div class="feedback__message"></div>
 				</form>
 			</div>
 		</section>-->
@@ -541,7 +542,24 @@
 		</section>
 	</main>
 
-	<footer class="footer"></footer>
+	<footer class="footer">
+		<section class="feedback">
+			<div class="container">
+				<form action="#" class="feedback__form">
+					<div class="feedback__title title">Получите за 10 минут точную стоимость вывоза мусора
+						по вашей фотографии</div>
+					<input class="feedback__name" placeholder="Ваше имя" type="text">
+					<input class="feedback__number" placeholder="+7(999) 999-99-99" type="number">
+					<input class="feedback__adress" placeholder="Адрес, откуда забрать" type="text">
+					<button class="feedback__btn btn">Узнать стоимость</button>
+					<div class="feedback__privacy-policy">Отправляя заявку, вы соглашаетесь с
+						<span>политикой конфиденциальности</span>
+					</div>
+					<div class="feedback__message"></div>
+				</form>
+			</div>
+		</section>
+	</footer>
 
 	<script src="src/scripts/main.js" type="module"></script>
 	<script src="src/scripts/pages/home.js" type="module"></script>

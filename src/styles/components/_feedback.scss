@@ -1,7 +1,9 @@
 .feedback {
 
+	background: url('../src/assets/images/feedback_bg.png') no-repeat center;
 	display: flex;
 	justify-content: center;
+	padding-bottom: 150px;
 
 	&__form {
 		max-width: 380px;
@@ -10,19 +12,45 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		border-radius: 10px;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 320px;
+			height: 420px;
+			bottom: -95px;
+			right: -175px;
+			background: url('../src/assets/images/mobaile.png');
+
+			@media (max-width: 500px) {
+				background: none;
+			}
+		}
 	}
 
 	&__title {
 		margin-bottom: 24px;
+		font-size: 28px;
+
+		@media (max-width: 550px) {
+			font-size: 22px;
+		}
 	}
 
 	&__name,
 	&__adress,
 	&__number {
-		padding: 20px 10px;
-		width: 300px;
+		padding: 23px 20px;
+		max-width: 300px;
+		width: 100%;
 		border-radius: 30px;
 		border: none;
+
+		@media (max-width: 375px) {
+			max-width: 250px;
+		}
 	}
 
 	&__number {
@@ -31,9 +59,33 @@
 
 	&__btn {
 		margin-top: 20px;
+		width: 340px;
+		height: 65px;
+		border: none;
+
+		@media (max-width: 375px) {
+			max-width: 290px;
+		}
+
+	}
+
+	&__message {
+		background: url('../src/assets/images/work-speed_ms.png') no-repeat;
+		width: 210px;
+		height: 85px;
+		margin-bottom: -110px;
+		margin-top: 30px;
 	}
 
 	&__privacy-policy {
 		margin-top: 24px;
+		max-width: 205px;
+		font-size: 13px;
+
+		span {
+			color: #ff8265;
+			font-size: inherit;
+			text-align: center;
+		}
 	}
 }
