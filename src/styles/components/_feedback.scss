@@ -93,10 +93,11 @@
 		max-width: 205px;
 		font-size: 13px;
 
-		span {
+		a {
 			color: #ff8265;
 			font-size: inherit;
 			text-align: center;
+			cursor: pointer;
 		}
 	}
 }

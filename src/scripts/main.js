@@ -1,10 +1,12 @@
 
 import '../styles/main.scss';
-//гамбургер меню
+
+// гамбургер меню
 const menuHamburgerBtn = document.querySelector('.header__menu-hamburger');
 const menuHamburgerPage = document.querySelector('.header__menu-hamburger-page');
 const menuHamburgerClose = document.querySelector('.header__menu-hamburger-close');
 const html = document.querySelector('html')
+const feedbackNumbers = document.querySelectorAll('.feedback__number');
 
 menuHamburgerBtn.addEventListener('click', () => {
 	menuHamburgerPage.classList.toggle('active');
@@ -29,6 +31,24 @@ upBtn.addEventListener('click', () => {
 		behavior: 'smooth'
 	})
 })
+
+for (let i = 0; i < feedbackNumbers.length; i++) {
+	new IMask(feedbackNumbers[i], {
+		mask: "+{7}(000)000-00-00",
+	});
+}
+
+
+// скролл к форме при нажатии на кнопку в типах работ
+document.querySelector('.types-work__btn').addEventListener('click', smoothScroll());
+
+function smoothScroll() {
+	document.querySelector('#feedback').scrollIntoView({
+		behavior: 'smooth'
+	});
+}
+
+
 
 
 
