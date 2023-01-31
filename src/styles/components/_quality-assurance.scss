@@ -101,10 +101,14 @@
 		margin-bottom: 15px;
 	}
 
+	&__title {
+		max-width: 540px;
+	}
+
 	&__img {
 		margin-bottom: 20px;
-		max-width: 220px;
-		height: 170px;
+		max-width: 210px;
+		height: 200px;
 		display: flex;
 		justify-content: center;
 		align-items: center;

@@ -23,6 +23,10 @@
 		margin-bottom: 40px;
 	}
 
+	&__title {
+		max-width: 650px;
+	}
+
 	&__list {
 		display: flex;
 		justify-content: space-between;
@@ -44,6 +48,12 @@
 				margin-bottom: 30px;
 			}
 		}
+	}
+
+	&__img {
+		width: 200px;
+		height: 160px;
+
 	}
 
 	&__btn-box {

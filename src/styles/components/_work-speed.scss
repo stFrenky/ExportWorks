@@ -16,6 +16,7 @@
 	}
 
 	&__content {
+		padding: 0 20px;
 		background: url('../src/assets/images/work-speed_bg.jpg') 400px -250px no-repeat;
 		height: 650px;
 
@@ -32,6 +33,12 @@
 		border: 1px solid #c4c4c4;
 		border-radius: 10px;
 		background: url('../src/assets/images/work-speed_gaz.jpg') no-repeat right #fff;
+
+		@media (max-width: 425px) {
+			background: #fff;
+			padding: 40px;
+			height: fit-content;
+		}
 
 		&::after {
 			content: "";
