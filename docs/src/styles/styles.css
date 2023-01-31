@@ -1,7 +1,7 @@
 @font-face {
   font-family: CirceRegular;
   src: url();
-  src: url("../fonts/CirceRegular.c5776f3f.ttf") format("truetype");
+  src: url("../assets/fonts/CirceRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: CirceLight;
   src: url();
-  src: url("../fonts/Circe-Light.913db8c8.ttf") format("truetype");
+  src: url("../assets/fonts/Circe-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
@@ -42,8 +42,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.no-scroll-and-opas {
-  opacity: .6;
+.no-scroll {
   overflow: hidden;
 }
 
@@ -56,6 +55,7 @@ html {
   height: 50px;
   visibility: hidden;
   opacity: 0;
+  z-index: 2;
 }
 
 .up-btn rect {
@@ -148,7 +148,7 @@ html {
 }
 
 .header-wrapper {
-  background: url("../images/banner_bg.jpg") top center no-repeat;
+  background: url("../assets/images/banner_bg.jpg") top center no-repeat;
   width: 100%;
   margin-bottom: 120px;
   background-size: cover;
@@ -307,7 +307,7 @@ html {
 }
 
 .banner {
-  background: url("../images/banner_bg2.png") 50px 50px no-repeat;
+  background: url("../assets/images/banner_bg2.png") 50px 50px no-repeat;
 }
 
 @media (max-width: 768px) {
@@ -490,7 +490,7 @@ html {
 
 .work-speed__content {
   padding: 0 20px;
-  background: url("../images/work-speed_bg.jpg") 400px -250px no-repeat;
+  background: url("../assets/images/work-speed_bg.jpg") 400px -250px no-repeat;
   height: 650px;
 }
 
@@ -507,7 +507,7 @@ html {
   padding: 50px 0 0 50px;
   border: 1px solid #c4c4c4;
   border-radius: 10px;
-  background: url("../images/work-speed_gaz.jpg") no-repeat right #fff;
+  background: url("../assets/images/work-speed_gaz.jpg") no-repeat right #fff;
 }
 
 @media (max-width: 425px) {
@@ -525,7 +525,7 @@ html {
   position: absolute;
   width: 120px;
   height: 150px;
-  background: url("../images/work-speed_watch.jpg") no-repeat;
+  background: url("../assets/images/work-speed_watch.jpg") no-repeat;
   top: -105px;
   left: -55px;
 }
@@ -551,7 +551,7 @@ html {
   position: absolute;
   width: 210px;
   height: 150px;
-  background: url(../images/work-speed_ms.png) no-repeat;
+  background: url("../assets/images/work-speed_ms.png") no-repeat;
   top: 38px;
   left: -224px;
 }
@@ -656,7 +656,7 @@ html {
 }
 
 .work-time {
-  background: url(/assets/work-time_bg.2a07bab9.jpg) -180px 320px no-repeat;
+  background: url("../assets/images/work-time_bg.jpg") -180px 320px no-repeat;
   margin-bottom: 100px;
   height: 1100px;
 }
@@ -739,7 +739,7 @@ html {
 }
 
 .feedback {
-  background: url(../images/feedback_bg.png) no-repeat center;
+  background: url("../assets/images/feedback_bg.png") no-repeat center;
   display: flex;
   justify-content: center;
   padding-bottom: 150px;
@@ -767,7 +767,7 @@ html {
   height: 420px;
   bottom: -95px;
   right: -175px;
-  background: url(../images/feedback_mobaile.png);
+  background: url("../assets/images/feedback_mobaile.png");
 }
 
 @media (max-width: 500px) {
@@ -831,7 +831,7 @@ html {
 }
 
 .feedback__message {
-  background: url(../images/work-speed_ms.png) no-repeat;
+  background: url("../assets/images/work-speed_ms.png") no-repeat;
   width: 210px;
   height: 85px;
   margin-bottom: -110px;
@@ -852,7 +852,7 @@ html {
 }
 
 .work-stages {
-  background: url(../images/work-stages_bg.png) no-repeat bottom #f3f3f3;
+  background: url("../assets/images/work-stages_bg.png") no-repeat bottom #f3f3f3;
   padding: 55px 0 140px;
 }
 
@@ -939,7 +939,7 @@ html {
 .work-stages__masters-text:after {
   content: "";
   position: absolute;
-  background: url(../images/work-stages_warn.svg) no-repeat center;
+  background: url("../assets/images/work-stages_warn.svg") no-repeat center;
   width: 25px;
   height: 25px;
   top: 0;
@@ -988,7 +988,7 @@ html {
   position: absolute;
   width: 40px;
   height: 50px;
-  background: url(../images/work-stages-arrow.svg) no-repeat center;
+  background: url("../assets/images/work-stages-arrow.svg") no-repeat center;
   bottom: -55px;
   left: 15px;
 }
@@ -1255,7 +1255,7 @@ html {
 .quality-assurance__note-neighbour:after {
   position: absolute;
   content: "";
-  background: url(../images/quality-assurance_neighbour.png) no-repeat;
+  background: url("../assets/images/quality-assurance_neighbour.png") no-repeat;
   width: 130px;
   height: 128px;
   left: 0;
@@ -1288,7 +1288,7 @@ html {
 .quality-assurance__note-oven:after {
   position: absolute;
   content: "";
-  background: url(../images/quality-assurance_oven.png) no-repeat;
+  background: url("../assets/images/quality-assurance_oven.png") no-repeat;
   width: 185px;
   height: 270px;
   left: 30px;
@@ -1394,7 +1394,7 @@ html {
 }
 
 .net-export__wrapper {
-  background: url(../images/net-export_bg.jpg) 50% 50% no-repeat;
+  background: url("../assets/images/net-export_bg.jpg") 50% 50% no-repeat;
   padding: 260px 0 0;
   height: 280px;
 }
@@ -1460,7 +1460,7 @@ html {
 }
 
 .eco-export {
-  background: url(src/assets/images/eco-export_bg.jpg) center 30px no-repeat;
+  background: url("../assets/images/eco-export_bg.jpg") center 30px no-repeat;
 }
 
 .eco-export__title-box {
@@ -1530,7 +1530,7 @@ html {
 .eco-export__phone:before {
   content: "";
   position: absolute;
-  background: url(src/assets/images/eco-export_messange.png) no-repeat;
+  background: url("../assets/images/eco-export_messange.png") no-repeat;
   width: 410px;
   height: 190px;
   bottom: 105px;
